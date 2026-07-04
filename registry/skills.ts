@@ -6550,5 +6550,45 @@ export const SKILLS: Skill[] = [
       'Founders launching creator-led products'
     ],
     tags: ['Influencer', 'Marketing', 'Campaigns', 'Planning', 'Creators']
+  },
+  {
+    id: '181',
+    name: 'tweetclaw',
+    description: 'OpenClaw plugin skill for X/Twitter search, monitoring, media, DMs, giveaway draws, and approval-gated posting.',
+    longDescription: 'TweetClaw packages the Xquik X automation API as an OpenClaw plugin and agent skill. It gives agents a safe catalog tool plus an optional live tool for tweet search, reply search, follower export, user lookup, media workflows, direct messages, monitors, webhooks, giveaway draws, and reviewed post or reply actions.',
+    author: 'Xquik',
+    downloads: 'npm',
+    stars: 0,
+    roles: [Role.MARKETING, Role.DATA, Role.PRODUCT],
+    isTrending: false,
+    isCowork: false,
+    setupCommand: 'openclaw plugins install npm:@xquik/tweetclaw',
+    yamlConfig: 'tools:\n  - name: tweetclaw\n    runtime: openclaw-plugin\n    approval: required-for-write-actions',
+    lastUpdated: '2026.7.4',
+    type: 'OpenClaw Plugin / Agent Skill',
+    compatibility: [
+      'OpenClaw',
+      'Codex CLI',
+      'Claude Code CLI',
+      'Gemini CLI'
+    ],
+        files: ['README.md', 'SKILL.md', 'package.json'],
+    repoUrl: 'https://github.com/Xquik-dev/tweetclaw',
+    triggers: [
+      'Search recent X/Twitter posts before drafting a campaign reply',
+      'Export followers or replies for agent-assisted analysis',
+      'Run an approval-gated post or reply from OpenClaw'
+    ],
+    features: [
+      'Catalog-first endpoint discovery through the safe explore tool',
+      'Optional live TweetClaw tool with per-call approval for write-like actions',
+      'X/Twitter search, replies, monitors, media, DMs, webhooks, and giveaway workflows'
+    ],
+    bestFor: [
+      'Social teams using OpenClaw to review X/Twitter context',
+      'Growth and community workflows that need structured X data',
+      'Agents that must keep posting and account actions approval-gated'
+    ],
+    tags: ['OpenClaw', 'X/Twitter', 'Social', 'Automation', 'Monitoring']
   }
 ];
